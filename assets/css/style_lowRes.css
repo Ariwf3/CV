@@ -1,0 +1,119 @@
+
+/* Feuille de style pour les résolutions mobiles media query : "screen and (max-width: 1024px)"  */
+
+
+/* ----------------  styles communs -------------- */
+body {
+    /* prend tout l'écran enlève le body et plus besoin de scroll en mobile je ne sais as encore pourquoi T_T*/
+    display: flex
+}
+
+/* largeur adaptée à l'écran */
+.container {
+    width: auto;
+}
+
+/* reset position dates */
+.dates {
+    position: static !important ;
+}
+
+
+
+/* ---------------------------HEADER--------------------------- */
+
+/* passage du bloc présentation en colonnes */
+#presentation {
+    flex-direction: column;
+    align-items: center;
+}
+
+#photo_profil>img {
+    width: 13em;
+}
+
+#titre_principal {
+    padding: 1em 2.5em 0 2.5em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+#contact {
+    width: auto;
+    padding-left: 0;
+    text-align: center;
+}
+
+#titre_contact_header {
+    font-size: 2.5em;
+}
+
+/* passage colonne  bloc Nav du Header */
+header nav>ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav>ul>li {
+    font-size: 1.6em;
+}
+
+header nav>ul>li:last-child {
+    border-bottom: none;
+}
+
+/*
+Faire disparaitre la derniere bordure ou non a voir après tests de rendu
+header nav>ul>li:last-child {
+    border-bottom: none
+}
+*/
+
+/* ------------------------Realisations------------------------ */
+
+.realisations_li_parent {
+    flex-direction: column;
+    align-items: center;
+}
+
+#realisations .intro_exp {
+    width: auto;
+}
+
+#realisations figure>img {
+    font-size: 1.5em;
+}
+
+
+
+
+/* -------------------- Footer ---------------- */
+
+
+/* passage colonne  bloc Nav du footer */
+footer nav>ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+#foot>nav>ul>li {
+    font-size: 1.6em;
+}
+#foot>nav>ul>li:first-child {
+    border-top: none;
+}
+
+/*bloc social */
+
+#foot address #social {
+    padding-right: 1em;
+    
+}
+.social_img {
+    width: 3.8em;
+    height: 3.8em;
+    padding-left: 0.5em;
+}

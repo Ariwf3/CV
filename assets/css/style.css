@@ -1,0 +1,508 @@
+/* reset */
+h1,h2,h3,h4,h5,body,ul {
+    margin: 0;
+}
+/* -------------styles généraux et communs--------------- */
+
+body {
+    /* précédent background: ghostwhite; */
+    background-image: url('../images/fond.png');
+    background-repeat: repeat-x;
+}
+
+/*Placement conteneur */
+.container {
+    width: 1000px;
+    margin : 0 auto;
+    font-size: 1em;
+    box-shadow: 1px 1px 6px;
+}
+
+/*style h1*/
+h1{
+    color:lightseagreen;
+    text-align: center;
+}
+
+/* style h2 */
+h2 {
+    font-size: 2.2em;
+    color: rgb(76, 63, 76);
+    padding: 0.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.radius {
+    border-radius: 50%;
+}
+
+/* style commun header footer */
+header,footer {
+    /* précedent background-color: palegoldenrod; */
+    background-color: snow;
+}
+
+.titre_liste, #contact_foot p {
+    padding: 0.6em;
+}
+
+/* Style commun flex */
+#presentation, nav>ul, #experiences .exp_liste, .formation_liste, .competences_liste, .extra_pro_liste, address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lieu {
+    font-size: 1.1em;
+    padding-right: 3.1em;
+    color: grey;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* -----------------header----------------------- */
+
+
+/* partie présentation */
+
+/* bloc photo profil */
+#photo_profil {
+    flex: 0;
+}
+
+/* decalage commun bloc presentation */
+#photo_profil, #contact {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+/* photo profil */
+#photo_profil>img {
+    width: 15em;
+    border-radius: 50%;
+}
+
+/* titre principal*/
+#titre_principal {
+    flex: 1;
+    padding: 1em 0 0 2.5em;
+}
+/* texte de présentation */
+#accroche {
+    color: steelblue;
+    font-size: larger;
+}
+/* emphase mots dans accroche */
+.emphase {
+    color: darkblue;
+    
+}
+
+
+/* bloc contact */
+#contact {
+    flex: 1;
+}
+
+/* titre Contact du header */
+#titre_contact_header {
+    font-size: 2.6em;
+}
+
+/* nav commun et header */
+
+
+/*ul nav commun*/
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+/* li nav header*/
+header>nav>ul>li {
+    
+    background:transparent;
+    border-bottom: 1px solid;
+    padding: 15px 4px;
+}
+/* liens nav commun */
+nav>ul a {
+    color: #85878b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0em 1.57em;
+}
+
+/* hover nav header */
+header>nav>ul li:hover {
+    background-color: rgb(255, 177, 79);
+    border-bottom: none;
+}
+
+
+/* bloc contact haut */
+#contact {
+    width: 70%;
+}
+
+#nomPrenom {
+    font-size: xx-large;
+    color: darkslategrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* icones contact*/
+.icones_contact_haut {
+    color: darkslategray;
+}
+
+/* ss titres contact */
+.contact_desc {
+    font-weight: bold;
+    color: rgb(76, 63, 76);
+}
+
+.test {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* ----------------- FIN header ----------------------------- */
+
+
+
+
+
+/*------------------   main ----------------------*/
+
+main{
+    background-color: lavender;
+}
+
+/* Section Experiences et Formation*/
+
+/* li parent avant imbriquation */
+.li_parent_exp {
+    padding-bottom: 2em;
+    /*width: 80%;*/
+}
+
+
+
+.titre_poste {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+/* texte introduction experience */
+.intro_exp {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 0.3em;
+    padding-top: 0.6em;
+}
+
+.intro_exp, .li_enfant_exp {
+    width: 80%;
+}
+
+/* li experience */
+.li_enfant_exp {
+    padding-bottom: 0.3em;
+}
+
+
+
+/* style dates experiences et formation */
+.dates {
+    font-size: 1.1em;
+    color: grey;
+    font-style: italic;
+}
+
+#date_3wa {
+    position: relative;
+    left: 17em;
+}
+
+/* id pour les dates car positionnement relatif différrent penser a le regler après ajout */
+#date_open {
+    position: relative;
+    left: 28em;
+}
+
+
+#date_wf3 {
+    position: relative;
+    left: 10em;
+    
+}
+
+#date_lucien {
+    position: relative;
+    left: 21em;
+}
+
+#date_kfc {
+    position: relative;
+    left: 17em;
+}
+
+#date_certifsOpen {
+    position: relative;
+    left: 15em;
+}
+
+#date_certifsWf3 {
+    position: relative;
+    left: 10em;
+}
+
+#date_licence {
+    position: relative;
+    left: 15em;
+}
+
+/* SECTION FORMATION */
+
+.formation_liste>ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* COMPETENCES */
+.li_enfant_comp {
+    display: flex; 
+    justify-content: space-between;
+}
+#competences .li_parent_exp {
+    padding-bottom: 2em;
+    width: 80%;
+}    
+.liste_logos_competences {
+    list-style-type: none;
+    padding: 0.8em 0 0 0;
+}
+
+.logos_competences {
+    height: 4em;
+    width: 4em;
+    margin-bottom: 1em;
+}
+
+/* jauges compétences*/
+.jauge_fond{
+    background: ghostwhite;
+    margin: 1.2em 1em 0 1em;
+    height: 28px;
+    width: 100%;
+    box-shadow: 2px 2px 7px;
+    position: relative;
+    left: 3em;
+}
+/*style jauge général */
+.jauge_couleur{
+	height: 100%;
+	
+}	
+
+/* styles jauge indiv avec linear gradient */
+#jauge_vscode {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,111111+60,1c1c1c+91,131313+100 */
+background: rgb(76,76,76); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(89,89,89,1) 12%, rgba(102,102,102,1) 25%, rgba(71,71,71,1) 39%, rgba(44,44,44,1) 50%, rgba(17,17,17,1) 60%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(17,17,17,1) 60%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,rgba(71,71,71,1) 39%,rgba(44,44,44,1) 50%,rgba(17,17,17,1) 60%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+
+#jauge_slack {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+background: rgb(254,187,187); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(254,187,187,1) 0%, rgba(254,144,144,1) 45%, rgba(255,92,92,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 45%,rgba(255,92,92,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(254,187,187,1) 0%,rgba(254,144,144,1) 45%,rgba(255,92,92,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jauge_trello {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2dfed+0,bed0ea+15,bed0ea+34,a6c0e3+39,afc7e8+62,bad0ef+75,99b5db+80,bed0ea+82,799bc8+100 */
+background: rgb(210,223,237); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(210,223,237,1) 0%, rgba(190,208,234,1) 15%, rgba(190,208,234,1) 34%, rgba(166,192,227,1) 39%, rgba(175,199,232,1) 62%, rgba(186,208,239,1) 75%, rgba(153,181,219,1) 80%, rgba(190,208,234,1) 82%, rgba(121,155,200,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(210,223,237,1) 0%,rgba(190,208,234,1) 15%,rgba(190,208,234,1) 34%,rgba(166,192,227,1) 39%,rgba(175,199,232,1) 62%,rgba(186,208,239,1) 75%,rgba(153,181,219,1) 80%,rgba(190,208,234,1) 82%,rgba(121,155,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(210,223,237,1) 0%,rgba(190,208,234,1) 15%,rgba(190,208,234,1) 34%,rgba(166,192,227,1) 39%,rgba(175,199,232,1) 62%,rgba(186,208,239,1) 75%,rgba(153,181,219,1) 80%,rgba(190,208,234,1) 82%,rgba(121,155,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2dfed', endColorstr='#799bc8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jauge_discord {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4ddb4+0,83c783+19,52b152+51,008a00+61,005700+75,002400+91 */
+background: rgb(180,221,180); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(180,221,180,1) 0%, rgba(131,199,131,1) 19%, rgba(82,177,82,1) 51%, rgba(0,138,0,1) 61%, rgba(0,87,0,1) 75%, rgba(0,36,0,1) 91%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 19%,rgba(82,177,82,1) 51%,rgba(0,138,0,1) 61%,rgba(0,87,0,1) 75%,rgba(0,36,0,1) 91%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(180,221,180,1) 0%,rgba(131,199,131,1) 19%,rgba(82,177,82,1) 51%,rgba(0,138,0,1) 61%,rgba(0,87,0,1) 75%,rgba(0,36,0,1) 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jauge_composer {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+20,2989d8+34,1e5799+80&0+0,0.8+15,1+19,1+61,0.8+85,0+100;Blue+Two+Sided+Transparent */
+background: -moz-linear-gradient(45deg, rgba(30,87,153,0) 0%, rgba(30,87,153,0.8) 15%, rgba(30,87,153,1) 19%, rgba(30,87,153,1) 20%, rgba(41,137,216,1) 34%, rgba(35,108,179,1) 61%, rgba(30,87,153,0.84) 80%, rgba(30,87,153,0.8) 85%, rgba(30,87,153,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 34%,rgba(35,108,179,1) 61%,rgba(30,87,153,0.84) 80%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 34%,rgba(35,108,179,1) 61%,rgba(30,87,153,0.84) 80%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jauge_npm {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6290c+37,f16f5c+47,f85032+66,f02f17+83,e73827+100 */
+background: rgb(246,41,12); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(246,41,12,1) 37%, rgba(241,111,92,1) 47%, rgba(248,80,50,1) 66%, rgba(240,47,23,1) 83%, rgba(231,56,39,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(246,41,12,1) 37%,rgba(241,111,92,1) 47%,rgba(248,80,50,1) 66%,rgba(240,47,23,1) 83%,rgba(231,56,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(246,41,12,1) 37%,rgba(241,111,92,1) 47%,rgba(248,80,50,1) 66%,rgba(240,47,23,1) 83%,rgba(231,56,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6290c', endColorstr='#e73827',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jauge_git {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ff52+0,91e842+100;Neon */
+background: rgb(210,255,82); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(210,255,82,1) 0%,rgba(145,232,66,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#jauge_bootstrap {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+0,c146a1+34,a80077+58,db36a4+100 */
+background: rgb(203,96,179); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 34%, rgba(168,0,119,1) 58%, rgba(219,54,164,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(203,96,179,1) 0%,rgba(193,70,161,1) 34%,rgba(168,0,119,1) 58%,rgba(219,54,164,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(203,96,179,1) 0%,rgba(193,70,161,1) 34%,rgba(168,0,119,1) 58%,rgba(219,54,164,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+/* commun sections*/
+section {
+    padding: 1em 0;
+}
+
+
+/*dernière section */
+#sec_activ {
+    padding-bottom: 3em;
+}
+
+/* ------------ SECTION REALISATIONS------------------- */
+
+#realisations ul ul {
+    padding: 0;
+}
+
+/* positionnement flex des images réalisations */
+.realisations_li_parent {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+    right: 2em;
+}
+
+div#realisations figure>img {
+    width: 15.7em;
+    height: 15.7em;
+}
+
+/* legende screens */
+figcaption {
+    text-align: center;
+    background-color: #494D4F;
+    opacity: 0.9;
+    padding: 0.8em;
+    position: relative;
+    bottom: 2.88em;
+    color: white;
+}
+
+
+
+/* ------------ FOOTER ---------------- */
+
+/* nav footer */
+
+/* li nav footer*/
+#foot>nav>ul>li {
+    background:transparent;
+    border-top: 1px solid;
+    padding: 1.3em 0.3em;
+}
+
+/* hover nav footer */
+#foot>nav>ul li:hover {
+    background-color: rgb(255, 177, 79);
+    border-top: none;
+}
+
+
+address {
+    justify-content: space-between;
+}
+
+#contact_foot {
+    flex: 1;
+}
+
+#contact_foot p {
+    font-weight: bold;
+        padding: 0.6em 0.6em 0 0.6em;
+    margin: 0.6em 0 1.2em 0.6em;
+}
+
+#titre_contact_footer {
+    color: darkslategray;
+}
+
+/*style icones mail tel */
+#mail, #tel, #cv {
+    font-size: 1.2em;
+}
+
+#cv a {
+    text-decoration: none;
+    color: black;
+}
+
+#cv a:visited {
+    color: black;
+}
+
+.icones_contact_bas {
+    color: darkslategray;
+}
+
+/* Partie logos sociaux */
+
+/* div social */
+#social {
+    padding-right: 3em;
+}
+
+/*logos*/
+.social_img {
+    flex: 1;
+    width: 5.7em;
+    height: 5.7em;
+    padding-left: 1em;
+}
+
+/* icone css3 validation */
+#css_valide {
+    text-align: right;
+    margin: 0;
+}
+
+

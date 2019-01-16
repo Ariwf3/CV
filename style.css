@@ -1,0 +1,294 @@
+/* reset */
+h1,h2,h3,h4,h5,body,ul {
+    margin: 0;
+}
+/* -------------styles généraux et communs--------------- */
+
+body {
+    background: ghostwhite;
+}
+
+/*Placement conteneur */
+.container {
+    width: 960px;
+    margin : 0 auto;
+    font-size: 1em;
+}
+
+/*style h1*/
+h1{
+    color:lightseagreen
+}
+
+/* style h2 */
+h2 {
+    font-size: 2.2em;
+    color: rgb(76, 63, 76);
+    padding: 0.2em;
+}
+
+/* style commun header footer */
+header,footer {
+    background-color: palegoldenrod;
+}
+
+.titre_liste, #contact_foot p {
+    padding: 0.6em;
+}
+
+/* Style commun flex */
+#presentation, nav>ul, #experiences .exp_liste, .formation_liste, .competences_liste, .extra_pro_liste, address {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lieu {
+    font-size: 1.1em;
+    padding-right: 3.1em;
+    color: grey;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* -----------------header----------------------- */
+
+
+/* partie présentation */
+
+/* bloc photo profil */
+#photo_profil {
+    flex: 0;
+}
+
+/* decalage commun bloc presentation */
+#photo_profil, #contact {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+/* photo profil */
+#photo_profil>img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* titre principal*/
+#titre_principal {
+    flex: 1;
+    padding: 1em 0 0 2.5em;
+}
+
+/* bloc contact */
+#contact {
+    flex: 1;
+}
+
+/* titre Contact du header */
+#titre_contact_header {
+    font-size: 2.6em;
+}
+
+/* nav commun et header */
+
+
+/*ul nav commun*/
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    
+    
+    
+}
+/* li nav header*/
+header>nav>ul>li {
+    
+    background:transparent;
+    border-bottom: 1px solid;
+    padding: 15px 23px;
+}
+/* liens nav commun */
+nav>ul a {
+    color: #85878b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+
+/* hover nav header */
+header>nav>ul li:hover {
+    background-color: rgb(255, 177, 79);
+    border-bottom: none;
+}
+
+
+/* bloc contact haut */
+#contact {
+    width: 70%;
+}
+
+#nomPrenom {
+    font-size: xx-large;
+    color: darkslategrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* icones contact*/
+.icones_contact_haut {
+    color: darkslategray;
+}
+
+/* ss titres contact */
+.contact_desc {
+    font-weight: bold;
+    color: rgb(76, 63, 76);
+}
+
+.test {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* ----------------- FIN header ----------------------------- */
+
+
+
+
+
+/*------------------   main ----------------------*/
+
+main{
+    background-color: lavender;
+}
+
+/* Section Expreiences */
+.li_parent_exp {
+    padding-bottom: 2em;
+}
+
+.li_enfant_exp_description {
+    padding-bottom: 0.3em;
+    padding-top: 0.6em;
+}
+
+.li_enfant_exp {
+    padding-bottom: 0.3em;
+}
+
+.titre_poste {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.intro_exp {
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*
+.exp_liste {
+    justify-content: space-between;
+}
+*/
+
+/* style dates */
+.dates {
+    font-size: 1.1em;
+    padding-right: 3.1em;
+    color: grey;
+    font-style: italic;
+}
+
+
+/* COMPETENCES */
+
+.logos_competences {
+    height: 4em;
+    width: 4em;
+}
+
+
+/* commun sections*/
+section {
+    padding: 1em 0;
+}
+
+/* pour après 
+.jauge_fond{
+	background: #e1e1e1;
+	height: 6px;
+	width: 100%;
+}
+.jauge_couleur{
+	height: 100%;
+	
+}	
+*/
+
+/*dernière section */
+#sec_activ {
+    padding-bottom: 3em;
+}
+
+
+
+
+/* ------------ footer ---------------- */
+
+/* nav footer */
+
+/* li nav footer*/
+#foot>nav>ul>li {
+    background:transparent;
+    border-top: 1px solid;
+    padding: 15px 23px;
+}
+
+/* hover nav footer */
+#foot>nav>ul li:hover {
+    background-color: rgb(255, 177, 79);
+    border-top: none;
+}
+
+
+address {
+    justify-content: space-between;
+}
+
+#contact_foot {
+    flex: 1;
+}
+
+#contact_foot p {
+    font-weight: bold;
+}
+
+#titre_contact_footer {
+    color: darkslategray;
+}
+
+/*style icones mail tel */
+#mail, #tel {
+    font-size: 1.2em;
+}
+.icones_contact_bas {
+    color: darkslategray;
+}
+
+/* Partie logos sociaux */
+
+/* div social */
+#social {
+    padding-right: 3em;
+}
+
+/*logos*/
+.social_img {
+    flex: 1;
+    width: 5.7em;
+    height: 5.7em;
+    padding-left: 1em;
+}
+
+
