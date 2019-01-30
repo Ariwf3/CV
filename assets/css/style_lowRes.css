@@ -4,8 +4,8 @@
 
 /* ----------------  styles communs -------------- */
 body {
-    /* prend tout l'écran enlève le body et plus besoin de scroll en mobile je ne sais as encore pourquoi T_T*/
-    display: flex
+    /* prend tout l'écran enlève le body et plus besoin de scroll en mobile je ne sais pas encore pourquoi T_T*/
+    display: flex;
 }
 
 /* largeur adaptée à l'écran */
@@ -26,6 +26,7 @@ body {
 #presentation {
     flex-direction: column;
     align-items: center;
+    font-size: larger;
 }
 
 #photo_profil>img {
@@ -33,6 +34,7 @@ body {
 }
 
 #titre_principal {
+    width: 50%;
     padding: 1em 2.5em 0 2.5em;
     text-align: center;
 }
@@ -110,10 +112,20 @@ footer nav>ul {
 
 #foot address #social {
     padding-right: 1em;
-    
+}
+div#mail, div#tel, div#cv {
+    font-size: 1em;
+}
+div#social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: 1em;
 }
 .social_img {
-    width: 3.8em;
-    height: 3.8em;
-    padding-left: 0.5em;
+    
+    width: 2.8em;
+    height: 2.8em;
+    padding: 0;
 }
