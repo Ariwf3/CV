@@ -113,8 +113,11 @@ footer nav>ul {
 #foot address #social {
     padding-right: 1em;
 }
-div#mail, div#tel, div#cv {
+div#tel, div#cv {
     font-size: 1em;
+}
+div#mail {
+    font-size: 0.8em;
 }
 div#social {
     display: flex;
