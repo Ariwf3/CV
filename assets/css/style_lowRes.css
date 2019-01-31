@@ -132,3 +132,13 @@ div#social {
     height: 2.8em;
     padding: 0;
 }
+
+
+/* résolution mini */
+@media screen and (max-device-width:625px){
+    .container {
+        width : auto;
+        margin: 0;
+    }
+
+} 
