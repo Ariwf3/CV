@@ -231,6 +231,11 @@ main{
 }
 
 /* id pour les dates car positionnement relatif différrent penser a le regler après ajout */
+
+#date_3wa_bachelor {
+    position: relative;
+    left: 9em;
+}
 #date_3wa_formations {
     position: relative;
     left: 1em;
