@@ -1,2 +1,2 @@
-# CV-Portfolio en ligne.
+# CV-Portfolio en ligne
 Portfolio avec liens vers mes projets et informations pratiques.
