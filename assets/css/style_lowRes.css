@@ -89,7 +89,17 @@ header nav>ul>li:last-child {
     font-size: 1.5em;
 }
 
+#figcaption_catswf3 {
+    bottom: 3em;
+}
 
+figcaption#figcaption_cats3wa {
+    bottom: 2em;
+}
+
+#figcaption_blog_oop {
+    bottom : 3em;
+}
 
 
 /* -------------------- Footer ---------------- */
