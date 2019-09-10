@@ -442,13 +442,15 @@ figcaption {
     color: white;
 }
 
-figcaption#figcaption_catswf3 {
-    bottom: 5.2em;
+#figcaption_catswf3 {
+    bottom: 4em;
 }
 figcaption#figcaption_cats3wa {
     bottom: 3.88em;
 }
-
+#figcaption_blog_oop {
+    bottom: 4em;
+}
 
 
 /* ------------ FOOTER ---------------- */
