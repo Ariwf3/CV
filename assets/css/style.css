@@ -91,6 +91,9 @@ header,footer {
     padding: 1em 0 0 2.5em;
 }
 /* texte de présentation */
+#accroche_p {
+    line-height: 1.5em;
+}
 #accroche {
     color: steelblue;
     font-size: larger;
