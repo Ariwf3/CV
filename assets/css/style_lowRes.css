@@ -10,6 +10,7 @@ body {
 
 /* largeur adaptée à l'écran */
 .container {
+    display: none;
     width: auto;
 }
 
