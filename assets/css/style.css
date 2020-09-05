@@ -12,6 +12,7 @@ body {
 
 /*Placement conteneur */
 .container {
+    display: none;
     width: 1000px;
     margin : 0 auto;
     font-size: 1em;
